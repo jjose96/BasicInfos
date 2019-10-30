@@ -29,3 +29,21 @@ mongoose.connect('mongodb://localhost:27017/web');
 var db=mongoose.connection; 
 db.on('error', console.log.bind(console, "Connection failed!")); 
 ```
+### Reading data from collection
+
+Following code will read the ```webtest``` collections and render the documents to the index.ejs . As I mentioned above , for to render outputs EJS view engine is used.
+```
+app.set('view engine', 'ejs');
+app.get('/', function(req, res) {
+  db.collection("webtest").find({}).toArray(function(err, result) {
+    if (err) throw err;
+    res.render('index',{result:result});
+    db.close;
+});});
+```
+
+#### Modules used:
+
+1) Express
+2) Mongoose
+3) Body-parser
