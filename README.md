@@ -49,3 +49,5 @@ app.get('/', function(req, res) {
 3) Body-parser
 
 Mongodb Compass is a handy UI for viewing inserted documents and setting up database.
+
+We made port 8080 to listen, So open http://localhost:8080 to see the project
