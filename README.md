@@ -17,4 +17,6 @@ Repository contains a simple nodejs file to render a HTML page with EJS view eng
 
 Here ```req.body.*``` will read the form inputs and store the results into corresponding variables.
 
-Passing 
+#Passing to Mongodb
+
+A JSON file format is created and stored it in an another variable. And finally by calling Mongodb code to import the data to the Mongodb database. Here ```webtest``` is the name of the collection in which I used for this project.
