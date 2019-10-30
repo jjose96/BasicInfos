@@ -19,7 +19,7 @@ Here ```req.body.*``` will read the form inputs and store the results into corre
 
 ### Passing to Mongodb
 
-A JSON file format is created and stored it in an another variable. And finally by calling Mongodb code to import the data to the Mongodb database. Here ```webtest``` is the name of the collection in which I used for this project.
+A JSON file format is created and stored it into another variable called ```write```. And by calling Mongodb code to import the data will put the document to the Mongodb database collections. Here ```webtest``` is the name of the collection in which I used for this project.
 
 Mongoose node module is used for the mongodb connection and for other operations.
 
@@ -48,4 +48,4 @@ app.get('/', function(req, res) {
 2) Mongoose
 3) Body-parser
 
-Mongodb is a handy UI for viewing inserted documents and setting up database.
+Mongodb Compass is a handy UI for viewing inserted documents and setting up database.
