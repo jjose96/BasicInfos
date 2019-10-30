@@ -42,6 +42,7 @@ app.get('/', function(req, res) {
 });});
 ```
 
+(https://raw.githubusercontent.com/jjose96/BasicInfos/master/preview.png)
 #### Modules used:
 
 1) Express
