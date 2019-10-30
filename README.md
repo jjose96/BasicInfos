@@ -20,3 +20,12 @@ Here ```req.body.*``` will read the form inputs and store the results into corre
 ### Passing to Mongodb
 
 A JSON file format is created and stored it in an another variable. And finally by calling Mongodb code to import the data to the Mongodb database. Here ```webtest``` is the name of the collection in which I used for this project.
+
+Mongoose node module is used for the mongodb connection and for other operations.
+
+```
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/web'); 
+var db=mongoose.connection; 
+db.on('error', console.log.bind(console, "Connection failed!")); 
+```
