@@ -47,3 +47,5 @@ app.get('/', function(req, res) {
 1) Express
 2) Mongoose
 3) Body-parser
+
+Mongodb is a handy UI for viewing inserted documents and setting up database.
